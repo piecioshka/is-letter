@@ -1,3 +1,35 @@
 {
-    "private": true
+    "name": "is-letter",
+    "version": "1.0.0",
+    "description": "It is a letter?",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "http://piecioshka.pl/"
+    },
+    "scripts": {
+        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
+    },
+    "devDependencies": {
+        "jasmine": "^2.4.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/piecioshka/is-letter.git"
+    },
+    "keywords": [
+        "number",
+        "is",
+        "check",
+        "checking",
+        "checker",
+        "letter",
+        "char"
+    ],
+    "files": [
+        "index.js",
+        "README.md",
+        "package.json"
+    ],
+    "main": "./index.js"
 }
