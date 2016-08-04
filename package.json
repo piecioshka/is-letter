@@ -1,7 +1,7 @@
 {
     "name": "is-letter",
     "description": "It is a letter?",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
@@ -39,6 +39,7 @@
     "files": [
         "dist",
         "lib",
+        "index.js",
         "README.md",
         "package.json"
     ],
