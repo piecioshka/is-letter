@@ -1,17 +1,26 @@
 {
     "name": "is-letter",
-    "version": "1.0.0",
     "description": "It is a letter?",
+    "version": "1.1.0",
+    "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
         "email": "piecioshka@gmail.com",
         "url": "http://piecioshka.pl/"
     },
     "scripts": {
-        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
+        "build": "webpack --profile",
+        "watch": "webpack -w",
+        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coverage": "istanbul cover jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls -v"
     },
     "devDependencies": {
-        "jasmine": "^2.4.1"
+        "istanbul": "^0.4.4",
+        "jasmine": "^2.4.1",
+        "json-loader": "^0.5.4",
+        "string-replace-loader": "^1.0.3",
+        "webpack": "^1.13.1"
     },
     "repository": {
         "type": "git",
@@ -27,9 +36,10 @@
         "char"
     ],
     "files": [
-        "index.js",
+        "dist",
+        "lib",
         "README.md",
         "package.json"
     ],
-    "main": "./index.js"
+    "main": "./dist/is-letter.js"
 }
