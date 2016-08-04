@@ -5,7 +5,7 @@
 [![Travis](https://img.shields.io/travis/piecioshka/is-letter.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/is-letter)
 [![Coverage Status](https://coveralls.io/repos/github/piecioshka/is-letter/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/is-letter?branch=master)
 
-> It is a letter?
+> :hammer: It is a letter?
 
 ## Install 
 
