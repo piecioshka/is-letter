@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @author Piotr Kowalski <piecioshka@gmail.com> (http://piecioshka.pl/)
 	 * @name is-letter
 	 * @description It is a letter?
-	 * @version 1.1.0
+	 * @version 1.1.1
 	 * @license MIT
 	 * @example
 	 * var isLetter = require('is-letter');
