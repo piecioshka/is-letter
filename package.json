@@ -9,6 +9,9 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
+        "clear": "rm -rf coverage/ .nyc_output/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "prebuild": "rm -rf dist/",
         "build": "webpack --profile",
         "watch": "webpack -w",
         "test": "jasmine test/specs/**/**.js",
