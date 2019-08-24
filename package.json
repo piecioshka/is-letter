@@ -13,12 +13,16 @@
         "watch": "webpack -w",
         "test": "jasmine test/specs/**/**.js",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v"
+        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
+        "version": "npm run build && git add dist/",
+        "postversion": "git push --tags"
     },
+    "dependencies": {},
     "devDependencies": {
         "coveralls": "^3.0.6",
         "jasmine": "^3.4.0",
         "json-loader": "^0.5.4",
+        "nyc": "^14.1.1",
         "string-replace-loader": "^2.2.0",
         "webpack": "^4.39.2",
         "webpack-cli": "^3.3.7"
@@ -43,8 +47,5 @@
         "README.md",
         "package.json"
     ],
-    "main": "./dist/is-letter.js",
-    "dependencies": {
-        "nyc": "^14.1.1"
-    }
+    "main": "./dist/is-letter.js"
 }
