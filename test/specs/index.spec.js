@@ -1,6 +1,6 @@
 'use strict';
 
-var isLetter = require('../../index');
+var isLetter = require('../../');
 
 describe('error handling', function () {
     it('should return false when passed non-string value', function () {
@@ -8,6 +8,7 @@ describe('error handling', function () {
         expect(isLetter(undefined)).toEqual(false);
         expect(isLetter(NaN)).toEqual(false);
         expect(isLetter(123)).toEqual(false);
+        expect(isLetter(5)).toEqual(false);
     });
 });
 

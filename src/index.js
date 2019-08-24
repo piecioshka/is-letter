@@ -19,7 +19,7 @@
  * @returns {boolean}
  */
 function isString(source) {
-    return typeof source === 'string';
+    return (typeof source === 'string');
 }
 
 /**
