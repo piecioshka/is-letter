@@ -25,7 +25,7 @@
         "url": "git://github.com/piecioshka/is-letter.git"
     },
     "engines": {
-        "node": ">=6"
+        "node": ">=4"
     },
     "dependencies": {},
     "devDependencies": {
@@ -50,6 +50,7 @@
         "dist",
         "src",
         "index.js",
+        "index.d.ts",
         "README.md",
         "package.json"
     ],
