@@ -3,7 +3,7 @@
  * @author Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl/)
  * @name is-letter
  * @description It is a letter?
- * @version 1.1.1
+ * @version 1.2.0
  * @license MIT
  * @example
  * var isLetter = require('is-letter');
