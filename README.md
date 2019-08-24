@@ -1,16 +1,18 @@
-# is-letter ([npm](https://www.npmjs.com/package/is-letter))
+# is-letter
 
+[![node version](https://img.shields.io/node/v/is-letter.svg)](https://www.npmjs.com/package/is-letter)
 [![npm version](https://badge.fury.io/js/is-letter.svg)](https://badge.fury.io/js/is-letter)
-![](https://img.shields.io/npm/dt/is-letter.svg)
-[![Travis](https://img.shields.io/travis/piecioshka/is-letter.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/is-letter)
-[![Coverage Status](https://coveralls.io/repos/github/piecioshka/is-letter/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/is-letter?branch=master)
+[![downloads count](https://img.shields.io/npm/dt/is-letter.svg)](https://www.npmjs.com/package/is-letter)
+[![travis-ci](https://img.shields.io/travis/piecioshka/is-letter.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/is-letter)
+[![coveralls](https://coveralls.io/repos/github/piecioshka/is-letter/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/is-letter?branch=master)
+[![snyk](https://snyk.io/test/github/piecioshka/is-letter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/piecioshka/is-letter?targetFile=package.json)
 
-> :hammer: It is a letter?
+:hammer: It is a letter?
 
-## Install 
+## Installation
 
-```
-$ npm install is-letter
+```bash
+npm install is-letter
 ```
 
 ## Usage
@@ -22,6 +24,18 @@ isLetter('a'); // => true
 isLetter('abba'); // => false
 ```
 
+## Unit tests
+
+```bash
+npm test
+```
+
+## Code coverage
+
+```bash
+npm run coverage
+```
+
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2016
+[The MIT License](https://piecioshka.mit-license.org) @ 2016

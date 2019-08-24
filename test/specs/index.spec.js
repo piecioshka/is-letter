@@ -1,6 +1,6 @@
 'use strict';
 
-var isLetter = require('../../../index');
+var isLetter = require('../../index');
 
 describe('error handling', function () {
     it('should return false when passed non-string value', function () {
@@ -22,5 +22,5 @@ describe('good work', function () {
         expect(isLetter('dog')).toEqual(false);
         expect(isLetter('small')).toEqual(false);
         expect(isLetter('kitten')).toEqual(false);
-    })
+    });
 });

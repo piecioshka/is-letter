@@ -6,22 +6,22 @@
     "author": {
         "name": "Piotr Kowalski",
         "email": "piecioshka@gmail.com",
-        "url": "http://piecioshka.pl/"
+        "url": "https://piecioshka.pl/"
     },
     "scripts": {
         "build": "webpack --profile",
         "watch": "webpack -w",
-        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-        "coverage": "istanbul cover jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-        "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls -v"
+        "test": "jasmine test/specs/**/**.js",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v"
     },
     "devDependencies": {
-        "coveralls": "^2.11.12",
-        "istanbul": "^0.4.4",
-        "jasmine": "^2.4.1",
+        "coveralls": "^3.0.6",
+        "jasmine": "^3.4.0",
         "json-loader": "^0.5.4",
-        "string-replace-loader": "^1.0.3",
-        "webpack": "^1.13.1"
+        "string-replace-loader": "^2.2.0",
+        "webpack": "^4.39.2",
+        "webpack-cli": "^3.3.7"
     },
     "repository": {
         "type": "git",
@@ -38,10 +38,13 @@
     ],
     "files": [
         "dist",
-        "lib",
+        "src",
         "index.js",
         "README.md",
         "package.json"
     ],
-    "main": "./dist/is-letter.js"
+    "main": "./dist/is-letter.js",
+    "dependencies": {
+        "nyc": "^14.1.1"
+    }
 }

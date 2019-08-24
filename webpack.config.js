@@ -1,26 +1,27 @@
 'use strict';
 
-var webpack = require('webpack');
+var path = require('path');
 var pkg = require('./package.json');
 var author = pkg.author.name + ' <' + pkg.author.email + '> (' + pkg.author.url + ')';
 
 module.exports = {
+    mode: 'production',
+
     entry: {
-        'is-letter': './index.js',
-        'is-letter.min': './index.js'
+        'is-letter': './index.js'
     },
 
     output: {
         library: 'isLetter',
         libraryTarget: 'umd',
         filename: '[name].js',
-        path: './dist/'
+        path: path.join(__dirname, 'dist')
     },
 
     devtool: 'source-map',
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.json$/,
                 loader: 'json-loader'
@@ -39,12 +40,5 @@ module.exports = {
                 }
             }
         ]
-    },
-
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            include: /\.min\.js$/,
-            minimize: true
-        })
-    ]
+    }
 };
