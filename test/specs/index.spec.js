@@ -10,6 +10,10 @@ describe('error handling', function () {
         expect(isLetter(123)).toEqual(false);
         expect(isLetter(5)).toEqual(false);
     });
+
+    it('should return false when passed non-letter unicode value', function () {
+        expect(isLetter("💩")).toEqual(false);
+    });
 });
 
 describe('good work', function () {
@@ -17,6 +21,9 @@ describe('good work', function () {
         expect(isLetter('a')).toEqual(true);
         expect(isLetter('Z')).toEqual(true);
         expect(isLetter('h')).toEqual(true);
+        expect(isLetter('ź')).toEqual(true);
+        expect(isLetter('ü')).toEqual(true);
+        expect(isLetter('ß')).toEqual(true);
     });
 
     it('should return false on words', function () {
