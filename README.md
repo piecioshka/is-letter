@@ -4,7 +4,6 @@
 [![npm version](https://badge.fury.io/js/is-letter.svg)](https://badge.fury.io/js/is-letter)
 [![downloads count](https://img.shields.io/npm/dt/is-letter.svg)](https://www.npmjs.com/package/is-letter)
 [![travis-ci](https://api.travis-ci.com/piecioshka/is-letter.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/is-letter)
-[![coveralls](https://coveralls.io/repos/github/piecioshka/is-letter/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/is-letter?branch=master)
 [![snyk](https://snyk.io/test/github/piecioshka/is-letter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/piecioshka/is-letter?targetFile=package.json)
 
 :hammer: It is a letter?
