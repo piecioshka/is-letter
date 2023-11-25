@@ -9,9 +9,6 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "prebuild": "rm -rf dist/",
-        "build": "webpack --profile",
-        "watch": "webpack -w",
         "test": "jasmine src/**/**.spec.js",
         "coverage": "nyc npm run test && nyc report --reporter=html"
     },
@@ -24,11 +21,7 @@
     },
     "devDependencies": {
         "jasmine": "^3.5.0",
-        "json-loader": "^0.5.4",
-        "nyc": "^15.0.0",
-        "string-replace-loader": "^2.2.0",
-        "webpack": "^4.42.0",
-        "webpack-cli": "^3.3.11"
+        "nyc": "^15.0.0"
     },
     "keywords": [
         "is",
@@ -37,10 +30,9 @@
         "validator"
     ],
     "files": [
-        "dist",
         "src",
         "README.md",
         "package.json"
     ],
-    "main": "./dist/is-letter.js"
+    "main": "./src/index.js"
 }

@@ -1,9 +1,5 @@
 /**
- * @author $AUTHOR$
- * @name $NAME$
- * @description $DESCRIPTION$
- * @version $VERSION$
- * @license $LICENSE$
+ * @author Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl/)
  * @example
  * var isLetter = require('is-letter');
  * isLetter('a'); // => true
