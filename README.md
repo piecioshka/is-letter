@@ -38,7 +38,6 @@ npm run coverage
 
 ```bash
 npm version (major|minor|patch)
-npm run build
 npm publish
 git push
 git push --tags
