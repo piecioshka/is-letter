@@ -5,7 +5,7 @@
 [![downloads count](https://img.shields.io/npm/dt/is-letter.svg)](https://www.npmjs.com/package/is-letter)
 [![snyk](https://snyk.io/test/github/piecioshka/is-letter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/piecioshka/is-letter?targetFile=package.json)
 
-:hammer: It is a letter?
+:hammer: Is it a letter?
 
 ## Installation
 
@@ -32,6 +32,15 @@ npm test
 
 ```bash
 npm run coverage
+```
+
+## Deployment script
+
+```bash
+npm version (major|minor|patch)
+npm run build
+npm publish
+git push --tags
 ```
 
 ## License
