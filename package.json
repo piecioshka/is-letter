@@ -1,6 +1,6 @@
 {
     "name": "is-letter",
-    "description": "It is a letter?",
+    "description": "Is it a letter?",
     "version": "1.2.1",
     "license": "MIT",
     "author": {
@@ -9,22 +9,18 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "clear": "rm -rf coverage/ .nyc_output/",
-        "clear:all": "rm -rf node_modules/ && npm run clear",
         "prebuild": "rm -rf dist/",
         "build": "webpack --profile",
         "watch": "webpack -w",
-        "test": "jasmine test/specs/**/**.js",
-        "coverage": "nyc npm run test && nyc report --reporter=html",
-        "version": "npm run build && git add dist/",
-        "postversion": "git push --tags"
+        "test": "jasmine src/**/**.spec.js",
+        "coverage": "nyc npm run test && nyc report --reporter=html"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/piecioshka/is-letter.git"
+        "url": "git@github.com:piecioshka/is-letter.git"
     },
     "engines": {
-        "node": ">=4"
+        "node": ">=8"
     },
     "devDependencies": {
         "jasmine": "^3.5.0",
@@ -35,22 +31,17 @@
         "webpack-cli": "^3.3.11"
     },
     "keywords": [
-        "number",
         "is",
-        "check",
-        "checking",
-        "checker",
         "letter",
-        "char"
+        "checker",
+        "validator"
     ],
     "files": [
         "dist",
         "src",
-        "index.js",
-        "index.d.ts",
         "README.md",
         "package.json"
     ],
-    "main": "./index.js",
-    "types": "./index.d.ts"
+    "main": "./dist/index.js",
+    "types": "./src/index.d.ts"
 }
