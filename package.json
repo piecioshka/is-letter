@@ -42,6 +42,5 @@
         "README.md",
         "package.json"
     ],
-    "main": "./dist/is-letter.js",
-    "types": "./src/index.d.ts"
+    "main": "./dist/is-letter.js"
 }
