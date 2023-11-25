@@ -1,44 +1,45 @@
-'use strict';
+"use strict";
 
-var path = require('path');
-var pkg = require('./package.json');
-var author = pkg.author.name + ' <' + pkg.author.email + '> (' + pkg.author.url + ')';
+var path = require("path");
+var pkg = require("./package.json");
+var author =
+    pkg.author.name + " <" + pkg.author.email + "> (" + pkg.author.url + ")";
 
 module.exports = {
-    mode: 'production',
+    mode: "production",
 
     entry: {
-        'is-letter': './index.js'
+        "is-letter": "./src/index.js",
     },
 
     output: {
-        library: 'isLetter',
-        libraryTarget: 'umd',
-        filename: '[name].js',
-        path: path.join(__dirname, 'dist')
+        library: "isLetter",
+        libraryTarget: "umd",
+        filename: "[name].js",
+        path: path.join(__dirname, "dist"),
     },
 
-    devtool: 'source-map',
+    devtool: "source-map",
 
     module: {
         rules: [
             {
                 test: /\.json$/,
-                loader: 'json-loader'
+                loader: "json-loader",
             },
             {
                 test: /\.js$/,
-                loader: 'string-replace-loader',
+                loader: "string-replace-loader",
                 query: {
                     multiple: [
-                        { search: '$AUTHOR$', replace: author },
-                        { search: '$NAME$', replace: pkg.name },
-                        { search: '$DESCRIPTION$', replace: pkg.description },
-                        { search: '$VERSION$', replace: pkg.version },
-                        { search: '$LICENSE$', replace: pkg.license }
-                    ]
-                }
-            }
-        ]
-    }
+                        { search: "$AUTHOR$", replace: author },
+                        { search: "$NAME$", replace: pkg.name },
+                        { search: "$DESCRIPTION$", replace: pkg.description },
+                        { search: "$VERSION$", replace: pkg.version },
+                        { search: "$LICENSE$", replace: pkg.license },
+                    ],
+                },
+            },
+        ],
+    },
 };
