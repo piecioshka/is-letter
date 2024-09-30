@@ -34,7 +34,7 @@ npm test
 npm run coverage
 ```
 
-## Deployment script
+## Deployment 🚀
 
 ```bash
 npm version (major|minor|patch)
