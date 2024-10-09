@@ -4,7 +4,6 @@
 [![npm version](https://badge.fury.io/js/is-letter.svg)](https://badge.fury.io/js/is-letter)
 [![downloads count](https://img.shields.io/npm/dt/is-letter.svg)](https://www.npmjs.com/package/is-letter)
 [![license](https://img.shields.io/npm/l/is-letter.svg)](https://www.npmjs.com/package/is-letter)
-[![snyk](https://snyk.io/test/github/piecioshka/is-letter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/piecioshka/is-letter?targetFile=package.json)
 
 :hammer: Is it a letter?
 
