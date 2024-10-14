@@ -3,7 +3,7 @@
 [![node version](https://img.shields.io/node/v/is-letter.svg)](https://www.npmjs.com/package/is-letter)
 [![npm version](https://badge.fury.io/js/is-letter.svg)](https://badge.fury.io/js/is-letter)
 [![downloads count](https://img.shields.io/npm/dt/is-letter.svg)](https://www.npmjs.com/package/is-letter)
-[![license](https://img.shields.io/npm/l/is-letter.svg)](https://www.npmjs.com/package/is-letter)
+[![license](https://img.shields.io/npm/l/is-letter.svg)](https://piecioshka.mit-license.org)
 
 :hammer: Is it a letter?
 
