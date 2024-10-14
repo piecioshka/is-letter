@@ -32,7 +32,8 @@
     "files": [
         "src",
         "README.md",
-        "package.json"
+        "package.json",
+        "!**/*.spec.*"
     ],
     "main": "./src/index.js"
 }
