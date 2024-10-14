@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/is-letter.git"
+        "url": "git+ssh://git@github.com/piecioshka/is-letter.git"
     },
     "engines": {
         "node": ">=8"
