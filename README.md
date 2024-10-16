@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/npm/l/is-letter.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/is-letter/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/is-letter/actions/workflows/testing.yml)
 
-:hammer: Is it a letter?
+🔨 Is it a letter?
 
 ## Installation
 
