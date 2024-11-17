@@ -12,16 +12,16 @@
         "test": "jasmine src/**/**.spec.js",
         "coverage": "nyc npm run test && nyc report --reporter=html"
     },
+    "devDependencies": {
+        "jasmine": "^3.5.0",
+        "nyc": "^15.0.0"
+    },
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/piecioshka/is-letter.git"
     },
     "engines": {
         "node": ">=8"
-    },
-    "devDependencies": {
-        "jasmine": "^3.5.0",
-        "nyc": "^15.0.0"
     },
     "keywords": [
         "is",
