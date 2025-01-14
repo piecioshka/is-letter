@@ -9,40 +9,19 @@
 
 🔨 Is it a letter?
 
-## Installation
+## Usage
+
+Installation:
 
 ```bash
 npm install is-letter
 ```
-
-## Usage
 
 ```javascript
 var isLetter = require('is-letter');
 
 isLetter('a'); // => true
 isLetter('abba'); // => false
-```
-
-## Unit tests
-
-```bash
-npm test
-```
-
-## Code coverage
-
-```bash
-npm run coverage
-```
-
-## Deployment 🚀
-
-```bash
-npm version (major|minor|patch)
-npm publish
-git push
-git push --tags
 ```
 
 ## License
